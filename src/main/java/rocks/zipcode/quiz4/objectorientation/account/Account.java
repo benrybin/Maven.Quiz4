@@ -3,7 +3,7 @@ package rocks.zipcode.quiz4.objectorientation.account;
 /**
  * @author leon on 30/12/2018.
  */
-public class Account extends BankAccount {
+public class Account  implements Transactable{
     Long id;
 
     public Long getId() {
@@ -12,5 +12,20 @@ public class Account extends BankAccount {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Override
+    public void deposit(Double amountToIncreaseBy) {
+
+    }
+
+    @Override
+    public void withdrawal(Double amountToDecreaseBy) {
+
+    }
+
+    @Override
+    public Double getBalance() {
+        return null;
     }
 }

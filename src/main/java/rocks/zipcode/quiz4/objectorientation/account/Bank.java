@@ -19,8 +19,11 @@ public class Bank {
 
     List<BankAccount> main = new ArrayList<>();
 
-    public void removeBankAccountByIndex(Integer indexNumber) {
-        getMain().remove(indexNumber);
+    public  void removeBankAccountByIndex(Integer indexNumber) {
+        System.out.println(getMain().size());
+        this.getMain().remove(indexNumber);
+        System.out.println(getMain().size());
+
 
 
     }
